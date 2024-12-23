@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ProSoft.DMT.Api.Logic</AssemblyName>
+    <RootNamespace>ProSoft.DMT.Api.Logic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Docker.DotNet.Enhanced" Version="3.126.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Data.Contracts\Api.Data.Contracts.csproj" />
+    <ProjectReference Include="..\Api.Logic.Contracts\Api.Logic.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

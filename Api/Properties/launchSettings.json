@@ -1,0 +1,28 @@
+{
+   "profiles": {
+      "https": {
+         "commandName": "Project",
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development",
+            "PROSOFT_DMT_MSSQL_CONNECTION_STRING": "Server=10.215.10.12;Database=prosoft-dmt-dev;User Id=sa;Password=Develop#2022;Encrypt=False"
+         },
+         "dotnetRunMessages": true,
+         "applicationUrl": "https://localhost:7103;"
+      },
+      "Container (Dockerfile)": {
+         "commandName": "Docker",
+         "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/WeatherForecast",
+         "environmentVariables": {
+            "ASPNETCORE_HTTPS_PORTS": "8081",
+            "ASPNETCORE_HTTP_PORTS": "8080",
+            "PROSOFT_DMT_MSSQL_CONNECTION_STRING": "Server=10.215.10.12;Database=prosoft-dmt-dev;User Id=sa;Password=Develop#2022;Encrypt=False"
+         },
+         "publishAllPorts": true,
+         "useSSL": true,
+         "containerRunArguments": "-v /var/run/docker.sock:/var/run/docker.sock",
+         "containerName": "pro-soft-dmt-api",
+         "sslPort": 32769
+      }
+   },
+   "$schema": "https://json.schemastore.org/launchsettings.json"
+}

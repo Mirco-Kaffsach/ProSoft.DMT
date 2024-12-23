@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ProSoft.DMT.Api.Logic.Contracts</AssemblyName>
+    <RootNamespace>ProSoft.DMT.Api.Logic.Contracts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Docker.DotNet.Enhanced" Version="3.126.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Docker.DotNet">
+      <HintPath>C:\Users\Administrator\.nuget\packages\docker.dotnet.enhanced\3.126.1\lib\net9.0\Docker.DotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
